@@ -1,0 +1,118 @@
+a= 3-2+5*4 # Esta forma sigue las reglas de aritmetica; primero multiplicación y después las sumas
+b= (3-2+5)*4 # Esta forma define que operacion se hará primero, en este caso, los parentesis luego la multiplicación
+
+print(a)
+print(b)
+------- 
+# SALTOS DE LINEA
+print('Esto es un nuevo sistema de isra \nSin embargo, hay que revisar dos veces')
+
+R== Esto es un nuevo sistema de isra 
+Sin embargo, hay que revisar dos veces
+--------
+# FUNCION LEN
+a= 'En algún lugar de un gran pais'# Los espacios también cuentan como caracteres
+print(a)
+print(len(a))
+--------
+# METODOS DE STRINGS
+a= 'En algún lugar de un gran pais'# Los espacios también cuentan como caracteres
+print(a.upper())
+print(a.lower())
+print(a.capitalize())
+print(a.title())
+print(a.replace('ú','X'))
+print(a.count('e'))
+print(a.split()) #Divide el texto por cada espacio que contiene la cadena de texto
+print("   EN ALGUN LUGAR DE UN GRAN PAIS    ".strip()) #Quita los espacios que tiene extras en la cadena de texto
+
+-------- 
+# CUANTOS CARACTERES TIENE EL SIGUIENTE TEXTO
+a= 'Mi mamá me mima'
+print(type(a))
+print(a)
+print(len(a))
+
+#CUANTAS PALABRAS TIENE EL TEXTO?
+a= 'Mi mamá me mima'
+print(a.split())
+print(len(a.split())) # Arroja el número de palabras que hay, ya que cuenta primero el split y luego el numero de palabras
+
+# CUANTAS VECES SE REPITE LA LETRA "M"
+a= 'Mi mamá me mima'
+print(a.lower())
+print(a.lower().count('m'))
+---------
+#OPERACIONES EN VARIABLES
+practica = 10
+teoria = 7.5
+nota_media = (practica + teoria) /2
+print(nota_media)
+alumno = 'Barbara Fernandez'
+print(f'{alumno}, su nota media es de: {nota_media}')
+
+---------
+# EJERCICIOS PRACTICOS DE PRINT
+cadena = 'Hola Mundo'
+
+# Imprimir el primer caracter de la cadena utilizando un indice
+print(cadena[0])
+
+# imprimir el ultimo caracter e la cadena utilizando indice negativo
+print(len(cadena))
+print(cadena[-1])
+
+# imprimir los primeros 4 caracteres de la cadena utilizando slicing
+print(cadena[0:4])
+
+# Imprimir los caracteres de la cadena que se encuentra en el segundo y sexto indice utilizando slicing.
+print(cadena[1:6])
+
+# Imprimir todos los caracteres en posición de indice impar (1,3,5).
+print(cadena[1::2])
+----
+
+# LISTAS
+lista = ['a','b','c','d','e',7,8,9,10]
+
+print(lista[1])
+print(lista[5])
+print(lista[0])
+print(type(lista[0]))
+print(type(lista[5]))
+
+
+------ 
+# OPERACIONES CON LISTAS
+a = [1,2,3,4,5,6,7,8,9]
+b = [10,11,12,13,14,15]
+a = a+b
+
+print(a+b) # Agrega ambas listas y las incorpora en una sola
+print(a)
+print(b*2) # Se concatena a si misma, es decir, se duplica
+
+
+---- 
+# MODIFICACIONES DE LISTAS
+numero = [1,2,3,4,5,6,6,8,9,10]
+letras = ['a','b','c','d','e']
+print(numero) # Antes de la modificación del numero repetido
+numero[6] = 7
+print(numero) # Despues de la modificación del numero repetido.
+print(letras)
+print(letras[:2]) # Muestra solo los dos primeros datos de la lista
+letras[:2] = ['X','X'] # Asignando valores al los dos primeros posiciones de la lista A y B
+print(letras)
+-----
+# USANDO APPEND, INSERT, POP
+pares = [2,4,6,8,10]
+pares.insert(3,'esto es una prueba') # Insertando un valor X en la posción que señalamos pero NO LO SUSTITYE, LO AGREGA
+print(pares)
+pares.append(12) # Añade un numero al final de la lista
+print(pares)
+pares.append(7*2) # Añade numero al fina de la lista mediante operaciones
+print(pares)
+letras = ['a','b','c','d']
+letras.pop(0) # Elimina un caracter (por default el ultimo caracter), cuando se especifica lo quita de la lista
+print(letras)
