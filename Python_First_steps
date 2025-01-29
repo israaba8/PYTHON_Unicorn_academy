@@ -142,3 +142,43 @@ pares = [2,4,6,8,10]
 print(sum(pares))
 print(max(pares))
 print(min(pares))
+
+---------- 
+# LISTAS EN LISTAS
+pares = [2,4,6,8]
+impares = [1,'perro',5,7]
+numeros = [pares,impares]
+print(numeros)
+print(numeros[0]) # Arroja la primera sublista, en este caso PARES está en la posición 0.
+print(numeros[-1]) # Arroja la ultima sublista, en este caso; los IMPARES que están en la posicón -1
+print(numeros[0][1]) # Para traer un caracter de una sublista; se define primero el lugar de la sublista y luego el lugar del carecter que buscamos.
+print(numeros[1][3]) # Trae el caracter en la posicón 3 de la sublista 1; en este caso, lista impares el numero 7 está en el lugar 3.
+print(type(numeros[1][1])) # Para conocer el tipo de dato que es en la sublista; es posición sublista y el numero del caracter que queremos saber el tipo de dato.
+print(type(numeros[1][2])) # Para conocer el tipo de dato que es en la sublista; es posición sublista y el numero del caracter que queremos saber el tipo de dato.
+
+
+------------ 
+#EJERCICIOS DE LISTAS 
+# Transformar el STRING en LISTA
+frase = 'mi mama me mima'
+frase = list(frase)
+print(frase)
+
+# Contar el numero de elemtnos de la lista
+print(len(frase))
+
+# Contar el numero de veces que aparece la "m"
+print(frase.count('m'))
+
+# Eliminar los espacios
+frase.sort() # Paso 1: ordernar la lista para que estén los espacios en blanco al principio
+print(frase)
+print(frase[:3]) # Paso 2:  seleccionar sólo los espacios en blanco
+frase[:3] = '' # Paso 3:
+print(frase)
+
+# Añadir al final un signo de exclamación
+frase.append('!')
+print(frase)
+
+
