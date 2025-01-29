@@ -116,3 +116,29 @@ print(pares)
 letras = ['a','b','c','d']
 letras.pop(0) # Elimina un caracter (por default el ultimo caracter), cuando se especifica lo quita de la lista
 print(letras)
+
+---------- 
+# METODOS Y FUNCIONES EN LISTAS
+numeros = [2,4,6,8,0,1,3,7,5,10,9]
+print(numeros)
+numeros.sort() # SORT - ordena los numeros por defecto de menor a mayor en numero y letras
+print(numeros)
+numeros.sort(reverse= True) # SORT(REVERSE= TRUE) - Ordena los numeros al rever, de mayor a menor.
+print(numeros)
+letras = ['a','c','e','b','d','f']
+print(letras)
+letras.sort()
+print(letras)
+letras.sort(reverse= True)
+print(letras)
+numero_1 = [2,4,6,8,0,1,3,7,5,10,9]
+print(sorted(numero_1)) # Esta función NO SOBREESCRIBE la variable, por lo que sólo lo ordena al momento de hacer print
+print(numero_1) # Acá estoy imprimiendo la variable y se muestra la diferencia cuando usamos SORTED
+print(numero_1.index(0))
+print(numero_1.count(0))
+cadena = 'cadena'
+print(list(cadena)) # Convierte un STRING a lista
+pares = [2,4,6,8,10]
+print(sum(pares))
+print(max(pares))
+print(min(pares))
