@@ -1,1 +1,37 @@
+mi_diccionario = {'nombre':'Marisa',
+                  'edad':30,
+                  'ciudad':'Bogotá',
+                  'profesion':'intérprete',
+                  'aficiones':['Kung Fu',
+                    'leer',
+                    'correr',
+                    'tocar la guitarra']}
+
+# Calcula el numeor de elementos que contiene
+print(len(mi_diccionario))
+
+# Cuales son sus claves
+print(mi_diccionario.keys())
+
+# Cuales son sus valores
+print(mi_diccionario.values())
+
+# Qué profesión tiene marisa?
+print(mi_diccionario['profesion'])
+
+# Cambiale por analista de datos
+mi_diccionario['profesion'] = 'Analista de datos'
+print(mi_diccionario)
+
+# De que calse es el valor del ultimo elemento?
+print(type(mi_diccionario['aficiones']))
+
+# Ordena sus aficiones por orden alfabético y localiza la última de ellas.
+mi_diccionario['aficiones'].sort() # Sort ordena también por minusculas y mayusculas; siendo primero las mayusculas.
+print(mi_diccionario)
+print(mi_diccionario['aficiones'][-1])
+
+# Cambiala por tocar el saxofón.
+mi_diccionario['aficiones'] = 'Tocar el saxofón'
+print(mi_diccionario)
 
