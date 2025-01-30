@@ -181,4 +181,52 @@ print(frase)
 frase.append('!')
 print(frase)
 
+-------- 
+#TUPLAS
+tupla = (1,2,'b',4.5122,'papá')
+print(type(tupla))
+#Tupla con una lista dentro, si son mutables; si se pueden modificar las listas internas de la tupla
+tupla_1 = (1,2,3,['a','b','c'])
+tupla_1[3][0] = ':0'
+print(tupla_1)
 
+
+------- 
+# METODOS Y FUNCIONES EN TUPLAS
+tupla = (1,2,2,3,'a','b','c')
+print(len(tupla)) # Conocer la longitud de la tupla
+print(tupla.index('a')) # Conocer en que posición está un caracter, en este caso la letra 'a'
+print(tupla.count(2)) # Conocer cuantos caracteres tenemos en una tupla, en este caso; tenemos 2 el numero 2.
+tupla_1 = (1,5,7,8,2,4)
+tupla_ordenada = sorted(tupla_1) # Ordenar una tupla, ya que la función SORT no funciona.
+print(tupla_ordenada)
+cadena = 'cadena'
+print(tuple(cadena)) # Transformando una cadena STRING en TUPLE
+
+------- 
+# EJERCICIOS DE TUPLAS
+# Crea una tupla
+tupla = (1,2,3,4,5)
+print(tupla)
+
+# Añadele la letra 'a'
+tupla = list(tupla) # Paso 1: Se pasa primero a tipo lista
+print(tupla)
+print(type(tupla))
+tupla.append('a') # Paso 2: Se agrega la letra a
+print(tupla)
+tupla = tuple(tupla) # Paso 3: Se vuelve a transformar a TUPLA
+print(tupla)
+print(type(tupla))
+
+# Calcula el numero de elementos de la tupla
+print(len(tupla))
+
+# Determina si el primer elemento de la tupla pertenece a la clase string
+print(isinstance(tupla[0],str)) #ISINSTANCE y el lugar mas el tipo de dato; te sale si es TRUE OR FALSE, en este caso, el 0 es de tipo INT.
+
+# De que clase es?.
+print(type(tupla[0]))
+
+# Localiza el índice del elemento con valor 5.
+print(tupla.index(5))
