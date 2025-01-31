@@ -1,1 +1,46 @@
+conjunto_1 = {1,2,3,4,5}
+conjunto_2 = {3,4,5,6,7}
 
+# Une eliminando repetidos
+print(conjunto_1|conjunto_2) # Usando la barra del botón a lado del numero 1.
+
+# Intersección ( Es decir, los numeros que son iguales en ambas conjuntos, en este caso el 3, 4 y 5 son aquellos que están en ambos conjuntos).
+print(conjunto_1&conjunto_2)
+
+# Resta
+print(conjunto_1-conjunto_2) # Se le quitan los numero del 2 al 1; es como un LEFT JOIN.
+print(conjunto_2-conjunto_1) # Se le quitan los numero del 1 al 2, es como un RIGHT JOIN.
+
+conjunto_1 = {1,2,3,4,5}
+conjunto_2 = {3,4}
+
+# Conjunto 2 tiene numero o está dentro del conjunto 1. arroja un boleano; si es true es que si tiene numero en el conjunto.
+print(conjunto_2.issubset(conjunto_1))
+
+# Conjunto 1 tiene numeros en conjunto 2
+print(conjunto_1.issuperset(conjunto_2))
+
+
+---- 
+# EJERCICIOS DE CONJUNTOS (RECOPILATORIOS)
+#Nombres de departaments de una empresa de tecnología
+departamentos_tecnologia = ['Desarrollo', 'Ingenieria','Ventas','Marketing','Recursos Humanos','Finanzas','Soporte Tecnico']
+#Nombres de departamentos de una empresa de moda
+departamentos_moda = ['Diseño','Produccion','Ventas','Marketing','Recursos Humanos','Finanzas','Logística']
+
+# 1. Transformarlos en conjuntos.
+dept_tec_conjunto = set(departamentos_tecnologia)
+dept_moda_conjunto = set(departamentos_moda)
+print(departamentos_moda)
+print(sorted(dept_moda_conjunto))
+print(departamentos_tecnologia.sort())
+print(sorted(dept_tec_conjunto))
+
+# 2. Saber cuales son los departamentos dupicados.
+print(dept_moda_conjunto & dept_tec_conjunto)
+
+# 3. Saber qué departamentos tendremos elimando los duplicados.
+print(dept_moda_conjunto|dept_tec_conjunto)
+
+# 4. Cuántos son?.
+print(len(dept_moda_conjunto|dept_tec_conjunto))
