@@ -1,0 +1,12 @@
+print(isinstance('Hola',int)) # Esto es un string  porque el INT es un numero y HOlA es un string.
+
+print(type(True)) # Arroja que es un BOLEANO
+print(type(False)) # Arroja que es un BOLEANO
+
+verdadero = True # Se puede colocar en una variable un TRUE/ FALSE
+print(verdadero)
+
+
+# Un BOL y un INT, devuelve que es un TRUE, porque en python es un subtipo de los enteros
+print(isinstance(verdadero,int)) 
+print(isinstance(verdadero,bool))
